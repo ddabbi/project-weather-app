@@ -1,0 +1,95 @@
+
+
+.weatherContainer {
+    font-family: Arial, sans-serif;
+    min-width: 400px;
+    max-width: 500px;
+    padding: 20px;
+    border: 1px #666 solid;
+    border-left: none;
+    border-radius: 10px;
+
+}
+
+.temperature {
+    text-align: center;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.temperature h1 {
+    font-size: 48px;
+    margin: 0;
+}
+
+
+.temperature img{
+    width: 30px;
+    height: 30px;
+}
+
+.details {
+    display: flex;
+    justify-content: center; /* 아이템 간의 간격을 고르게 배분 */
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.detailItem {
+    display: flex;
+    align-items: center; /* 이미지와 텍스트를 수직으로 중앙 정렬 */
+    gap: 10px; /* 이미지와 텍스트 사이의 간격 */
+    flex: 1; /* 각 아이템이 가능한 공간을 균등하게 차지하게 함 */
+    max-width: 150px; /* 각 아이템의 최대 너비를 제한 */
+    position: relative; /* 구분선의 위치 조정을 위해 relative 설정 */
+    flex-direction: column;
+}
+
+/* 구분선을 오른쪽에 추가 */
+.detailItem:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 1px; /* 구분선의 두께 */
+    height: 100%; /* 구분선의 높이 */
+    background-color: #ccc; /* 구분선의 색상 */
+    transform: translateX(50%); /* 아이템의 오른쪽 가장자리와 맞추기 위해 이동 */
+}
+
+.detailInner{
+    display: flex;
+    gap: 4px;
+}
+
+.detailTitle {
+    font-weight: bold;
+    margin: 0 5px; /* 제목과 이미지 사이의 간격 조정 */
+}
+
+.detailVal {
+    font-size: 14px; /* 값의 폰트 사이즈 조정 */
+    font-weight: normal;
+    margin: 0; /* 값의 margin을 0으로 설정 */
+}
+
+.detailItem p {
+    margin: 0; /* p 요소의 기본 margin 제거 */
+}
+
+.sunTimes {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    margin-bottom: 40px;
+    font-size: 14px;
+    color: #666;
+}
+
+.sunriseTime, .sunsetTime {
+    display: flex;
+    align-items: center;
+}
+

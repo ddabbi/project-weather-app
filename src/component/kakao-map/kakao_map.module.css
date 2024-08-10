@@ -1,0 +1,90 @@
+.zoom_btn {
+    display: block;
+    width: 36px;
+    height: 40px;
+    text-align: center;
+    cursor: pointer;
+    border: 0.5px solid #ccc;
+    background-color:white;
+   
+    
+}
+
+.zoom_box{
+    border: none;
+    position: absolute;
+    top:400px;
+    left:670px;
+    width:36px;
+    height:80px;
+    overflow:hidden;
+    z-index:2;
+    background-color:#f5f5f5;
+}
+.map {
+    position: relative;
+}
+
+.weather_box h3{
+    margin : 0;
+}
+.weather_box p{
+    margin : 0;
+}
+
+.weather h3{
+    margin: 0;
+}
+.weatherContainer{
+    margin: auto;
+    width: 50px;
+    height: 50px;
+    border: 1px solid #ccc; 
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 5px;
+    color: #000;
+    padding: 0px;
+   
+    text-align: center;
+  }
+  .weatherContainer p{
+    margin-top: -5px;
+  }
+.weather-icon {
+    margin: auto;
+    width: 30px;
+    height: 30px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+  }
+  
+  .clear {
+    background-image: url('https://www.weather.go.kr/w/resources/icon/NY@128/A/Light/NB01.png');
+  }
+  
+  .cloudy {
+    background-image: url('https://www.weather.go.kr/w/resources/icon/NY@128/A/Light/NB04.png');
+  }
+  
+  .overcast {
+    background-image: url('https://www.weather.go.kr/w/resources/icon/NY@128/A/Light/NB03.png');
+  }
+  
+  .rain {
+    background-image: url('https://www.weather.go.kr/w/resources/icon/NY@128/A/Light/NB08.png');
+  }
+  
+  .rain-snow {
+    background-image: url('https://www.weather.go.kr/w/resources/icon/NY@128/A/Light/NB12.png');
+  }
+  
+  .snow {
+    background-image: url('https://www.weather.go.kr/w/resources/icon/NY@128/A/Light/NB11.png');
+  }
+  
+  .shower {
+    background-image: url('https://www.weather.go.kr/w/resources/icon/NY@128/A/Light/NB07.png');
+  }
+  
+
